@@ -49,6 +49,7 @@
         height: 100vh;
         transform: translateX(-600px);
         transition: .3s all;
+        z-index: 222;
     }
 
     header > #header-container-mobile > .nav-mobile > ul {

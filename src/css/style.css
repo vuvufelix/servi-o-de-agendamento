@@ -17,11 +17,18 @@
 
 body {
     background-color: var(--preto);
-    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
 }
 
 #header-desktop {
     padding: 0.8rem;
+    background-color: var(--preto);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 header > #header-container {
@@ -52,8 +59,9 @@ header > #header-container > nav > ul {
 
 header > #header-container > nav > ul > li > a {
     text-decoration: none;
-    color: var(--dourado2);
+    color: var(--branco);
     transition: .3s;
+    font-weight: bold;
 }
 
 header > #header-container > nav > ul > li > a:hover {
@@ -64,4 +72,189 @@ header > #header-container > nav > ul > li > a:hover {
 
 .hide {
     display: none;
+}
+
+/**/
+
+main {
+    width: 100%;
+}
+
+main > #img-fundo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.411)), url("../img/imagem6.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    width: 100%;
+    height: 33rem;
+    position: relative;
+}
+
+main > #img-fundo > #campo-titulo {
+    position: absolute;
+    top: 10rem;
+    left: 6rem;
+}
+
+main > #img-fundo > #campo-titulo > h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--dourado);
+    margin-bottom: 1.7rem;
+}
+
+main > #img-fundo > #campo-titulo > p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dourado);
+    width: 40rem;
+}
+
+main > #container-artigo {
+    display: flex;
+    justify-content: space-around;
+    margin: 6rem auto 6rem auto;
+    width: 90%;
+    gap: 2rem;
+}
+
+main > #container-artigo > #artigo-campo {
+    width: 37rem;
+    height: 20rem;
+    background-color: #fff;
+}
+
+main > #container-artigo > #artigo-campo > img {
+    width: 10px;
+    width: 37rem;
+    height: 20rem;
+    object-fit: cover;
+}
+
+main > #container-artigo > #artigo-conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+}
+
+main > #container-artigo > #artigo-conteudo > h3 {
+    color: var(--branco);
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+main > #container-artigo > #artigo-conteudo > article {
+    color: var(--branco);
+    font-size: 1.1rem;
+    line-height: 2em;
+    text-align: justify;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+main > #container-artigo > #artigo-conteudo > article > strong {
+    color: var(--dourado);
+}
+
+main > #container-artigo > #artigo-conteudo > button {
+    padding: 0.6rem;
+    border-radius: 0.6rem;
+    background-color: var(--dourado2);
+    border: none;
+    font-weight: bolder;
+    color: #2F4F4F;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+    width: 15rem;
+}
+
+main > #container-artigo > #artigo-conteudo > button:hover {
+    background-color: var(--dourado);
+}
+
+main > #sobre-nos {
+    width: 100%;
+    padding: 0 1.5rem 0 4rem;
+    margin-bottom: 2rem;
+}
+
+main > #sobre-nos > h2 {
+    color: var(--dourado2);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+main > #sobre-nos > article > p {
+    color: var(--branco);
+    line-height: 2em;
+    text-align: justify;
+    font-weight: 400;
+}
+
+main > #servico-container {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.7rem;
+}
+
+main > #servico-container > h3 {
+    color: var(--dourado2);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1.3rem;
+}
+
+main > #servico-container > #servicos {
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+main > #servico-container > #servicos > div {
+    height: 16rem;
+    width: 16rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.7rem;
+    border: 0.18rem solid var(--dourado);
+    cursor: pointer;
+}
+
+main > #servico-container > #servicos > div > span {
+    font-weight: bold;
+    color: var(--dourado);
+    font-size: 1.1rem;
+}
+
+main > #servico-container > #servicos > div > .icone-destaque > i {
+    font-size: 7rem;
+    color: var(--dourado2);
+}
+
+main > #container-observacao {
+    width: 100%;
+    padding: 1rem 4rem;
+    background-color: #001F3F;
+    margin-bottom: 2rem;
+}
+
+main > #container-observacao > p {
+    font-size: 1.5rem;
+    color: var(--branco);
+}
+
+main > #container-observacao > p > strong {
+    color: var(--dourado);
 }
