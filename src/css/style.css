@@ -17,4 +17,51 @@
 
 body {
     background-color: var(--preto);
+    overflow: hidden;
+}
+
+#header-desktop {
+    padding: 0.8rem;
+}
+
+header > #header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > #header-container > a {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 4rem;
+}
+
+header > #header-container > a > img {
+    width: 100%;
+}
+
+header > #header-container > nav {
+    margin-right: 5rem;
+}
+
+header > #header-container > nav > ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+header > #header-container > nav > ul > li > a {
+    text-decoration: none;
+    color: var(--dourado2);
+    transition: .3s;
+}
+
+header > #header-container > nav > ul > li > a:hover {
+    color: var(--dourado);
+}
+
+/**/
+
+.hide {
+    display: none;
 }
