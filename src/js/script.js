@@ -25,3 +25,5 @@ function mudouTamanho() {
         header_desktop.classList.add("hide")
     }
 }
+
+mudouTamanho()

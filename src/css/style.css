@@ -68,13 +68,9 @@ header > #header-container > nav > ul > li > a:hover {
     color: var(--dourado);
 }
 
-/**/
-
 .hide {
     display: none;
 }
-
-/**/
 
 main {
     width: 100%;

@@ -12,7 +12,12 @@
 
     #header-mobile {
         padding: 0;
-        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 22;
+        box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.644);
+        width: 100%;
     }
     
     header > #header-container-mobile {
