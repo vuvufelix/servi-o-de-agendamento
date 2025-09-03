@@ -8,27 +8,10 @@
     <link rel="stylesheet" href="src/css/style.css">
     <title>Agendamentos</title>
 </head>
-<body>
-    <!--
-    
-    <i class="fa-solid fa-passport"></i>
-    <i class="fa-solid fa-plane"></i>
-    <i class="fa-solid fa-suitcase"></i>
-    <i class="fa-solid fa-id-card"></i>
-    <i class="fa-solid fa-location-dot"></i>
-    <i class="fa-solid fa-phone"></i>
-    <i class="fa-solid fa-envelope"></i>
-    <i class="fa-solid fa-calendar-check"></i>
-    <i class="fa-solid fa-clock"></i>
-    <i class="fa-solid fa-credit-card"></i>
-    <i class="fa-solid fa-money-bill-1"></i>
-    <i class="fa-solid fa-shield-halved"></i>
-    
-    -->
-
+<body onresize="mudouTamanho()">
     <header id="header-desktop">
         <div id="header-container">
-            <a href=""><img src="src/img/imagem11.jpg" alt="logo do site"></a>
+            <a href=""><img src="src/img/imagem14.png" alt="logo do site"></a>
             <nav>
                 <ul>
                     <li><a href="">Home</a></li>
@@ -43,7 +26,7 @@
 
     <header id="header-modile" class="hide">
         <div id="header-container-mobile">
-            <a href=""><img src="src/img/imagem11.jpg" alt="logo do site"></a>
+            <a href=""><img src="src/img/imagem14.png" alt="logo do site"></a>
             <nav class="nav-mobile">
                 <ul>
                     <li><a href="">Home</a></li>
@@ -53,7 +36,7 @@
                     <li><a href="">Contacto</a></li>
                 </ul>
             </nav>
-            <div id="menu-amburguer">x</div>
+            <div id="menu-amburguer"><i class="fa-solid fa-bars"></i></div>
         </div>
     </header>
 
@@ -92,62 +75,64 @@
         <section id="servico-container">
             <h3>Nossos Serviços</h3>
             <div id="servicos">
-                <div>
-                    <span><i class="fa-solid fa-plane"></i> Visto Nacional</span>
-                    <div class="icone-destaque">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <span>350.000,00 Kz</span>
-                </div>
-                <div>
-                    <span><i class="fa-solid fa-plane"></i> Visto Schengen</span>
-                    <div class="icone-destaque">
-                        <i class="fa-solid fa-passport"></i>
-                    </div>
-                    <span>150.000,00 Kz</span>
-                </div>
-                <div>
-                    <span><i class="fa-solid fa-plane"></i> Visto Nacional</span>
-                    <div class="icone-destaque">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <span>350.000,00 Kz</span>
-                </div>
-                <div>
-                    <span><i class="fa-solid fa-plane"></i> Visto Schengen</span>
-                    <div class="icone-destaque">
-                        <i class="fa-solid fa-passport"></i>
-                    </div>
-                    <span>150.000,00 Kz</span>
-                </div>
-                <div>
-                    <span><i class="fa-solid fa-plane"></i> Visto Nacional</span>
-                    <div class="icone-destaque">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <span>350.000,00 Kz</span>
-                </div>
-                <div>
-                    <span><i class="fa-solid fa-plane"></i> Visto Schengen</span>
-                    <div class="icone-destaque">
-                        <i class="fa-solid fa-passport"></i>
-                    </div>
-                    <span>150.000,00 Kz</span>
-                </div>
-                <div>
-                    <span><i class="fa-solid fa-plane"></i> Visto Nacional</span>
-                    <div class="icone-destaque">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <span>350.000,00 Kz</span>
-                </div>
-                <div>
-                    <span><i class="fa-solid fa-plane"></i> Visto Schengen</span>
-                    <div class="icone-destaque">
-                        <i class="fa-solid fa-passport"></i>
-                    </div>
-                    <span>150.000,00 Kz</span>
-                </div>
+                <ul>
+                    <li>
+                        <span><i class="fa-solid fa-plane"></i> Visto Nacional</span>
+                        <div class="icone-destaque">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span>350.000,00 Kz</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-plane"></i> Visto Schengen</span>
+                        <div class="icone-destaque">
+                            <i class="fa-solid fa-passport"></i>
+                        </div>
+                        <span>150.000,00 Kz</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-plane"></i> Visto Nacional</span>
+                        <div class="icone-destaque">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span>350.000,00 Kz</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-plane"></i> Visto Schengen</span>
+                        <div class="icone-destaque">
+                            <i class="fa-solid fa-passport"></i>
+                        </div>
+                        <span>150.000,00 Kz</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-plane"></i> Visto Nacional</span>
+                        <div class="icone-destaque">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span>350.000,00 Kz</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-plane"></i> Visto Schengen</span>
+                        <div class="icone-destaque">
+                            <i class="fa-solid fa-passport"></i>
+                        </div>
+                        <span>150.000,00 Kz</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-plane"></i> Visto Nacional</span>
+                        <div class="icone-destaque">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <span>350.000,00 Kz</span>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-plane"></i> Visto Schengen</span>
+                        <div class="icone-destaque">
+                            <i class="fa-solid fa-passport"></i>
+                        </div>
+                        <span>150.000,00 Kz</span>
+                    </li>
+                </ul>
             </div>
         </section>
         <div id="container-observacao">
@@ -156,6 +141,75 @@
                 O pagamento é feito apenas após a confirmação do seu agendamento. Garantimos um serviço <strong>presencial,</strong> sem a necessidade de videochamadas, para maior segurança e conveniência. <i class="fa-solid fa-shield-halved"></i>
             </p>
         </div>
+        <section id="contacto-container">
+            <h3>Entre em Contacto Conosco</h3>
+            <p>Estamos prontos para te ajudar a dar o próximo passo rumo à sua viagem.</p>
+        </section>
+
+        <section id="container-contactar">
+            <div id="info-contactar">
+                <h4>Entre em contacto</h4>
+                <p>Preencha o formulário ao lado e entraremos em contacto com você o mais rápido possível</p>
+                <div>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <span class="info">Telefone</span>
+                                <span>931445744</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span class="info">Localização</span>
+                                <span>Luanda, Cazenga-Tala Hady, Rua F</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span class="info">E-mail</span>
+                                <span>soaresladia30@gmail,com</span>
+                            <div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span class="info">Whatsapp</span>
+                                <span>931445744</span>
+                            <div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="form-container">
+                <form action="">
+                    <h4>Contactar</h4>
+                    <div id="primeiro-campo">
+                        <div class="primeira-linha">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome">
+                        </div>
+                        <div class="primeira-linha">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                    </div>
+                    <div id="segunda-coluna">
+                        <label for="assunto">Assunto</label>
+                        <input type="text" name="assunto" id="assunto">
+                    </div>
+                    <div id="terceira-coluna">
+                        <label for="sms">Mensagem</label>
+                        <textarea name="sms" id="sms"></textarea>
+                    </div>
+                    <div>
+                        <button>Enviar Mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 
     <div style="background-color: aliceblue; width: 100%; height: 100px;">

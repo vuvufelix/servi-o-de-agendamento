@@ -16,14 +16,14 @@
 }
 
 body {
-    background-color: var(--preto);
-    overflow-x: hidden;
+    background-color: var(--azul-marinho);
     position: relative;
 }
 
 #header-desktop {
     padding: 0.8rem;
-    background-color: var(--preto);
+    background-color: var(--azul-marinho);
+    box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.644);
     position: fixed;
     width: 100%;
     top: 0;
@@ -213,13 +213,17 @@ main > #servico-container > h3 {
 main > #servico-container > #servicos {
     width: 90%;
     padding: 1rem;
+}
+
+main > #servico-container > #servicos > ul {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
 }
 
-main > #servico-container > #servicos > div {
+main > #servico-container > #servicos > ul > li {
     height: 16rem;
     width: 16rem;
     padding: 1rem;
@@ -228,25 +232,26 @@ main > #servico-container > #servicos > div {
     justify-content: space-between;
     align-items: center;
     border-radius: 0.7rem;
-    border: 0.18rem solid var(--dourado);
+    border: 0.18rem solid var(--cinza-escuro);
     cursor: pointer;
+    box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.466);
 }
 
-main > #servico-container > #servicos > div > span {
+main > #servico-container > #servicos > ul > li > span {
     font-weight: bold;
     color: var(--dourado);
     font-size: 1.1rem;
 }
 
-main > #servico-container > #servicos > div > .icone-destaque > i {
+main > #servico-container > #servicos > ul > li > .icone-destaque > i {
     font-size: 7rem;
-    color: var(--dourado2);
+    color: var(--cinza-escuro);
 }
 
 main > #container-observacao {
     width: 100%;
     padding: 1rem 4rem;
-    background-color: #001F3F;
+    background-color: var(--azul-petroleo);
     margin-bottom: 2rem;
 }
 
@@ -257,4 +262,189 @@ main > #container-observacao > p {
 
 main > #container-observacao > p > strong {
     color: var(--dourado);
+}
+
+main > #contacto-container {
+    width: 100%;
+    padding: 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+main > #contacto-container > h3 {
+    font-size: 2.5rem;
+    color: var(--dourado2);
+    margin-bottom: 0.5rem;
+}
+main > #contacto-container > p {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--branco);
+}
+
+main > #container-contactar {
+    background-color: var(--cinza-escuro);
+    padding: 2rem 4rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+main > #container-contactar > #info-contactar {
+    width: 30rem;
+}
+
+main > #container-contactar > #info-contactar > h4 {
+    font-size: 1.6rem;
+    color: var(--branco);
+    margin-bottom: 0.5rem;
+}
+
+main > #container-contactar > #info-contactar > p {
+    color: var(--branco);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1.7rem;
+}
+
+main > #container-contactar > #info-contactar > div > ul {
+    list-style: none;
+}
+
+main > #container-contactar > #info-contactar > div > ul > li {
+    background-color: #1e262b;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.37);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+main > #container-contactar > #info-contactar > div > ul > li > div {
+    display: flex;
+    gap: 0.1rem;
+    flex-direction: column;
+    color: var(--branco);
+}
+
+main > #container-contactar > #info-contactar > div > ul > li > div > .info {
+    font-weight: bold;
+}
+
+main > #container-contactar > #info-contactar > div > ul > li > .fa-phone {
+    color: var(--dourado2);
+}
+
+main > #container-contactar > #info-contactar > div > ul > li > .fa-location-dot {
+    color: var(--dourado2);
+}
+
+main > #container-contactar > #info-contactar > div > ul > li > .fa-envelope {
+    color: var(--dourado2);
+}
+
+main > #container-contactar > #form-container {
+    background-color: #1e262b;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.432);
+}
+
+main > #container-contactar > #form-container > form > h4 {
+    font-size: 1.6rem;
+    color: var(--branco);
+    margin-bottom: 0.6rem;
+}
+
+main > #container-contactar > #form-container > form #primeiro-campo {
+    display: flex;
+    gap: 2rem;
+}
+
+main > #container-contactar > #form-container > form #primeiro-campo > .primeira-linha {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: var(--branco);
+    margin-bottom: 1rem;
+}
+
+main > #container-contactar > #form-container > form #primeiro-campo > .primeira-linha > input {
+    width: 16rem;
+    border: 0.1rem solid var(--dourado);
+    height: 1.7rem;
+    border-radius: 0.3rem;
+    outline-width: 2px;
+    text-indent: 2px;
+    font-weight: 600;
+    padding: 0.9rem;
+    background-color: #1e262b;
+    color: var(--branco);
+}
+
+main > #container-contactar > #form-container > form #segunda-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    color: var(--branco);
+    margin-bottom: 1rem;
+}
+
+main > #container-contactar > #form-container > form #segunda-coluna > input {
+    border: 0.1rem solid var(--dourado);
+    height: 1.7rem;
+    border-radius: 0.3rem;
+    text-indent: 2px;
+    font-weight: 600;
+    background-color: #1e262b;
+    outline-width: 2px;
+    padding: 0.9rem;
+    color: var(--branco);
+}
+
+main > #container-contactar > #form-container > form #terceira-coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--branco);
+    margin-bottom: 1rem;
+}
+
+main > #container-contactar > #form-container > form #terceira-coluna > textarea {
+    border: 0.1rem solid var(--dourado);
+    height: 5rem;
+    border-radius: 0.3rem;
+    text-indent: 10px;
+    font-weight: 600;
+    padding: 0.5rem;
+    background-color: #1e262b;
+    color: var(--branco);
+}
+
+main > #container-contactar > #form-container > form button {
+    padding: 0.4rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    background-color: var(--dourado2);
+    color: #2F4F4F;
+    font-weight: bold;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+
+main > #container-contactar > #form-container > form button:hover {
+    background-color: var(--dourado);
 }

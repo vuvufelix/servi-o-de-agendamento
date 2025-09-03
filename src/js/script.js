@@ -15,13 +15,13 @@ menu_amburguer.addEventListener("click", () => {
     console.log("funcionando")
 })
 
-window.addEventListener("resize", (evento) => {
+function mudouTamanho() {
 
-    if(evento.target.innerWidth <= 700) {
-        header_modile.classList.remove("hide")
-        header_desktop.classList.add("hide")
-    } else {
+    if(window.innerWidth >= 700) {
         header_modile.classList.add("hide")
         header_desktop.classList.remove("hide")
+    } else {
+        header_modile.classList.remove("hide")
+        header_desktop.classList.add("hide")
     }
-})
+}

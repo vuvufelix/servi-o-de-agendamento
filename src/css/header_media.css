@@ -12,6 +12,7 @@
 
     #header-mobile {
         padding: 0;
+        display: block;
     }
     
     header > #header-container-mobile {
