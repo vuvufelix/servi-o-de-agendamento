@@ -242,18 +242,26 @@ main > .servico-container > #servicos > ul > li {
     border-radius: 0.7rem;
     border: 0.18rem solid var(--cinza-escuro);
     cursor: pointer;
-    box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.466);
+    box-shadow: 1rem 0rem 13rem 12px rgba(0, 0, 0, 0.466);
+
+    background-color: rgb(129, 50, 160);
+    background:linear-gradient(45deg, #370c68,#0c1a68);
+    transition: .3s
+}
+
+main > .servico-container > #servicos > ul > li:hover {
+    transform: translateY(-15px) scale(1.07);
 }
 
 main > .servico-container > #servicos > ul > li > span {
     font-weight: bold;
-    color: var(--dourado);
+    color: #69851a;
     font-size: 1.1rem;
 }
 
 main > .servico-container > #servicos > ul > li > .icone-destaque > i {
     font-size: 7rem;
-    color: var(--cinza-escuro);
+    color: #69851a;
 }
 
 main > #container-observacao {
