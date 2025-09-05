@@ -34,4 +34,10 @@ export function servico_scrool() {
         duration: 2000,
         distance: "50%" 
     });
+
+    ScrollReveal().reveal('.swiper-slide', { 
+        origin: "left",
+        duration: 4000,
+        distance: "100%" 
+    });
 }

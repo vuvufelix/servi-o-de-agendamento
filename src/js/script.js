@@ -53,11 +53,10 @@ const observar = new IntersectionObserver((entries) => {
 
 //console.log(observar)
 
-mudouTamanho()
 
+mudouTamanho()
 servico_scrool()
 
 section.forEach(seccao => {
     observar.observe(seccao, document.querySelector("#home"), document.querySelector("#sobre"))
- })
- 
+})

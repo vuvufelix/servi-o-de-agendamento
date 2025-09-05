@@ -260,7 +260,7 @@ main > #container-observacao {
     width: 100%;
     padding: 1rem 4rem;
     background-color: var(--azul-petroleo);
-    margin-bottom: 2rem;
+    margin-bottom: 3.5rem;
 }
 
 main > #container-observacao > p {
@@ -270,6 +270,36 @@ main > #container-observacao > p {
 
 main > #container-observacao > p > strong {
     color: var(--dourado);
+}
+
+main > #imagem-slide {
+    width: 90%; 
+    padding: 4rem 0; 
+    overflow-x: hidden;
+    margin: 2rem auto;
+    box-shadow: inset 0 0.3rem 5rem 5px #000000b6;
+}
+
+main > #imagem-slide > h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--dourado2);
+    margin-bottom: 2rem;
+}
+
+main > #imagem-slide .swiper-slide {
+    width: 15rem; 
+    height: 15rem; 
+    background-position: center; 
+    background-size: cover;
+    box-shadow: -2px 1rem 11rem 1rem #000000;
+}
+
+main > #imagem-slide .swiper-slide > img {
+    display: block; 
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
 }
 
 main > .contacto-container {
@@ -523,6 +553,7 @@ footer > #copy-right {
     text-align: center;
     color: #868383;
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 #contactar-agora {
@@ -531,8 +562,8 @@ footer > #copy-right {
     background-color: greenyellow;
     border-radius: 100%;
     position: fixed;
-    top: 35rem;
-    right: 3.5rem;
+    bottom: 50px;
+    right: 30px;
     cursor: pointer;
     box-shadow: 0 0.5rem 0.8rem 0.1rem rgba(0, 0, 0, 0.575);
     transition: .3s;
@@ -540,6 +571,7 @@ footer > #copy-right {
     align-items: center;
     justify-content: center;
     font-size: 2rem;
+    z-index: 22;
 }
 
 #contactar-agora:hover {
