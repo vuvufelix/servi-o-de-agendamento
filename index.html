@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/header_media.css">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Agendamentos</title>
 </head>
 <body onresize="mudouTamanho()">
+    <!--
+        <i class="fa-solid fa-file-lines"></i>
+        <i class="fa-solid fa-calendar-check"></i>
+        <i class="fa-solid fa-calendar"></i>
+        <i class="fa-solid fa-house"></i>
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-award"></i>
+    -->
     <header id="header-desktop">
         <div id="header-container">
             <a href=""><img src="src/img/imagem14.png" alt="logo do site"></a>
-            <nav>
+            <nav class="nav-bar">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Quem somos</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Localização</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#home" id="link-home">Home</a></li>
+                    <li><a href="#sobre" id="link-sobre">Quem somos</a></li>
+                    <li><a href="#servico" id="link-servico">Serviços</a></li>
+                    <li><a href="#contato" id="link-contato">Contacto</a></li>
+                    <li><a href="#localizacao" id="link-localizacao">Localização</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,8 +41,8 @@
                     <li><a href="">Home</a></li>
                     <li><a href="">Quem somos</a></li>
                     <li><a href="">Serviços</a></li>
-                    <li><a href="">Localização</a></li>
                     <li><a href="">Contacto</a></li>
+                    <li><a href="">Localização</a></li>
                 </ul>
             </nav>
             <div id="menu-amburguer"><i class="fa-solid fa-bars"></i></div>
@@ -41,15 +50,15 @@
     </header>
 
     <main>
-        <div id="img-fundo">
+        <div class="img-fundo" id="home">
             <div id="campo-titulo">
                 <h1>Agendamento de Visto para Portugal</h1>
-                <p>
+                <p class="paragrafo-scroll">
                     Facilitamos o seu agendamento para vistos nacionais e Schengen para Portugal
                 </p>
             </div>
         </div>
-        <section id="container-artigo">
+        <section class="container-artigo"  id="sobre">
             <div id="artigo-campo">
                 <img src="src/img/imagem5.jpg" alt="imagem de pessoas viajando">
             </div>
@@ -61,7 +70,7 @@
                 <button>Entrar em contacto  <i class="fa-solid fa-phone"></i></button>
             </div>
         </section>
-        <section id="sobre-nos">
+        <section class="sobre-nos">
             <h2>Quem Somos ?</h2>
             <article>
                 <p>
@@ -72,60 +81,60 @@
                 </p>
             </article>
         </section>
-        <section id="servico-container">
+        <section class="servico-container" id="servico">
             <h3>Nossos Serviços</h3>
             <div id="servicos">
                 <ul>
-                    <li>
+                    <li class="servico-scroll">
                         <span><i class="fa-solid fa-plane"></i> Visto Nacional</span>
                         <div class="icone-destaque">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <span>350.000,00 Kz</span>
                     </li>
-                    <li>
+                    <li class="servico-scroll">
                         <span><i class="fa-solid fa-plane"></i> Visto Schengen</span>
                         <div class="icone-destaque">
                             <i class="fa-solid fa-passport"></i>
                         </div>
                         <span>150.000,00 Kz</span>
                     </li>
-                    <li>
+                    <li class="servico-scroll">
                         <span><i class="fa-solid fa-plane"></i> Visto Nacional</span>
                         <div class="icone-destaque">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <span>350.000,00 Kz</span>
                     </li>
-                    <li>
+                    <li class="servico-scroll">
                         <span><i class="fa-solid fa-plane"></i> Visto Schengen</span>
                         <div class="icone-destaque">
                             <i class="fa-solid fa-passport"></i>
                         </div>
                         <span>150.000,00 Kz</span>
                     </li>
-                    <li>
+                    <li class="servico-scroll">
                         <span><i class="fa-solid fa-plane"></i> Visto Nacional</span>
                         <div class="icone-destaque">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <span>350.000,00 Kz</span>
                     </li>
-                    <li>
+                    <li class="servico-scroll">
                         <span><i class="fa-solid fa-plane"></i> Visto Schengen</span>
                         <div class="icone-destaque">
                             <i class="fa-solid fa-passport"></i>
                         </div>
                         <span>150.000,00 Kz</span>
                     </li>
-                    <li>
+                    <li class="servico-scroll">
                         <span><i class="fa-solid fa-plane"></i> Visto Nacional</span>
                         <div class="icone-destaque">
                             <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <span>350.000,00 Kz</span>
                     </li>
-                    <li>
+                    <li class="servico-scroll">
                         <span><i class="fa-solid fa-plane"></i> Visto Schengen</span>
                         <div class="icone-destaque">
                             <i class="fa-solid fa-passport"></i>
@@ -141,39 +150,39 @@
                 O pagamento é feito apenas após a confirmação do seu agendamento. Garantimos um serviço <strong>presencial,</strong> sem a necessidade de videochamadas, para maior segurança e conveniência. <i class="fa-solid fa-shield-halved"></i>
             </p>
         </div>
-        <section id="contacto-container">
+        <section class="contacto-container" id="contato">
             <h3>Entre em Contacto Conosco</h3>
             <p>Estamos prontos para te ajudar a dar o próximo passo rumo à sua viagem.</p>
         </section>
 
-        <section id="container-contactar">
+        <section class="container-contactar" id="localizacao">
             <div id="info-contactar">
                 <h4>Entre em contacto</h4>
                 <p>Preencha o formulário ao lado e entraremos em contacto com você o mais rápido possível</p>
                 <div>
                     <ul>
-                        <li>
+                        <li class="scroll-localizacao">
                             <i class="fa-solid fa-phone"></i>
                             <div>
                                 <span class="info">Telefone</span>
                                 <span>931445744</span>
                             </div>
                         </li>
-                        <li>
+                        <li class="scroll-localizacao">
                             <i class="fa-solid fa-location-dot"></i>
                             <div>
                                 <span class="info">Localização</span>
                                 <span>Luanda, Cazenga-Tala Hady, Rua F</span>
                             </div>
                         </li>
-                        <li>
+                        <li class="scroll-localizacao">
                             <i class="fa-solid fa-envelope"></i>
                             <div>
                                 <span class="info">E-mail</span>
                                 <span>soaresladia30@gmail.com</span>
                             <div>
                         </li>
-                        <li>
+                        <li class="scroll-localizacao">
                             <i class="fa-brands fa-whatsapp"></i>
                             <div>
                                 <span class="info">Whatsapp</span>
@@ -233,6 +242,8 @@
     <div id="contactar-agora">
         <i class="fa-brands fa-whatsapp"></i>
     </div>
-    <script src="src/js/script.js"></script>
+    <script src="src/js/slide_swiper.js" type="module"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="src/js/script.js" type="module"></script>
 </body>
 </html>

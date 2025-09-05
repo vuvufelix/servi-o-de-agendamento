@@ -1,9 +1,4 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --preto: #000000;
@@ -13,6 +8,14 @@
     --cinza-escuro: #36454F;
     --azul-marinho: #001F3F;
     --azul-petroleo: #2F4F4F;
+    --estilo-de-letra: "Roboto", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--estilo-de-letra);
 }
 
 body {
@@ -59,9 +62,9 @@ header > #header-container > nav > ul {
 
 header > #header-container > nav > ul > li > a {
     text-decoration: none;
-    color: var(--branco);
     transition: .3s;
     font-weight: bold;
+    color: var(--branco);
 }
 
 header > #header-container > nav > ul > li > a:hover {
@@ -72,15 +75,19 @@ header > #header-container > nav > ul > li > a:hover {
     display: none;
 }
 
-.ativar {
+header > #header-container > nav > ul > li > a.ativar {
     color: var(--dourado);
+}
+
+.cor-branco {
+    color:#fff;
 }
 
 main {
     width: 100%;
 }
 
-main > #img-fundo {
+main > .img-fundo {
     background-image: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.411)), url("../img/imagem6.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,27 +97,27 @@ main > #img-fundo {
     position: relative;
 }
 
-main > #img-fundo > #campo-titulo {
+main > .img-fundo > #campo-titulo {
     position: absolute;
     top: 10rem;
     left: 6rem;
 }
 
-main > #img-fundo > #campo-titulo > h1 {
+main > .img-fundo > #campo-titulo > h1 {
     font-size: 4rem;
     font-weight: bold;
     color: var(--dourado);
     margin-bottom: 1.7rem;
 }
 
-main > #img-fundo > #campo-titulo > p {
+main > .img-fundo > #campo-titulo > p {
     font-size: 2rem;
     font-weight: bold;
     color: var(--dourado);
     width: 40rem;
 }
 
-main > #container-artigo {
+main > .container-artigo {
     display: flex;
     justify-content: space-around;
     margin: 6rem auto 6rem auto;
@@ -118,33 +125,33 @@ main > #container-artigo {
     gap: 2rem;
 }
 
-main > #container-artigo > #artigo-campo {
+main > .container-artigo > #artigo-campo {
     width: 37rem;
     height: 20rem;
     background-color: #fff;
 }
 
-main > #container-artigo > #artigo-campo > img {
+main > .container-artigo > #artigo-campo > img {
     width: 10px;
     width: 37rem;
     height: 20rem;
     object-fit: cover;
 }
 
-main > #container-artigo > #artigo-conteudo {
+main > .container-artigo > #artigo-conteudo {
     display: flex;
     flex-direction: column;
     width: 40rem;
 }
 
-main > #container-artigo > #artigo-conteudo > h3 {
+main > .container-artigo > #artigo-conteudo > h3 {
     color: var(--branco);
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
 
-main > #container-artigo > #artigo-conteudo > article {
+main > .container-artigo > #artigo-conteudo > article {
     color: var(--branco);
     font-size: 1.1rem;
     line-height: 2em;
@@ -153,11 +160,11 @@ main > #container-artigo > #artigo-conteudo > article {
     margin-bottom: 1rem;
 }
 
-main > #container-artigo > #artigo-conteudo > article > strong {
+main > .container-artigo > #artigo-conteudo > article > strong {
     color: var(--dourado);
 }
 
-main > #container-artigo > #artigo-conteudo > button {
+main > .container-artigo > #artigo-conteudo > button {
     padding: 0.6rem;
     border-radius: 0.6rem;
     background-color: var(--dourado2);
@@ -171,30 +178,30 @@ main > #container-artigo > #artigo-conteudo > button {
     box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.212);
 }
 
-main > #container-artigo > #artigo-conteudo > button:hover {
+main > .container-artigo > #artigo-conteudo > button:hover {
     background-color: var(--dourado);
 }
 
-main > #sobre-nos {
+main > .sobre-nos {
     width: 100%;
     padding: 0 1.5rem 0 4rem;
     margin-bottom: 2rem;
 }
 
-main > #sobre-nos > h2 {
+main > .sobre-nos > h2 {
     color: var(--dourado2);
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 
-main > #sobre-nos > article > p {
+main > .sobre-nos > article > p {
     color: var(--branco);
     line-height: 2em;
     text-align: justify;
     font-weight: 400;
 }
 
-main > #servico-container {
+main > .servico-container {
     width: 100%;
     padding: 1rem;
     display: flex;
@@ -204,19 +211,19 @@ main > #servico-container {
     margin-bottom: 1.7rem;
 }
 
-main > #servico-container > h3 {
+main > .servico-container > h3 {
     color: var(--dourado2);
     font-weight: bold;
     font-size: 2rem;
     margin-bottom: 1.3rem;
 }
 
-main > #servico-container > #servicos {
+main > .servico-container > #servicos {
     width: 90%;
     padding: 1rem;
 }
 
-main > #servico-container > #servicos > ul {
+main > .servico-container > #servicos > ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -224,7 +231,7 @@ main > #servico-container > #servicos > ul {
     justify-content: center;
 }
 
-main > #servico-container > #servicos > ul > li {
+main > .servico-container > #servicos > ul > li {
     height: 16rem;
     width: 16rem;
     padding: 1rem;
@@ -238,13 +245,13 @@ main > #servico-container > #servicos > ul > li {
     box-shadow: 0.1rem 0.3rem 0.5rem rgba(0, 0, 0, 0.466);
 }
 
-main > #servico-container > #servicos > ul > li > span {
+main > .servico-container > #servicos > ul > li > span {
     font-weight: bold;
     color: var(--dourado);
     font-size: 1.1rem;
 }
 
-main > #servico-container > #servicos > ul > li > .icone-destaque > i {
+main > .servico-container > #servicos > ul > li > .icone-destaque > i {
     font-size: 7rem;
     color: var(--cinza-escuro);
 }
@@ -265,7 +272,7 @@ main > #container-observacao > p > strong {
     color: var(--dourado);
 }
 
-main > #contacto-container {
+main > .contacto-container {
     width: 100%;
     padding: 1rem 4rem;
     display: flex;
@@ -274,18 +281,18 @@ main > #contacto-container {
     margin-bottom: 2rem;
 }
 
-main > #contacto-container > h3 {
+main > .contacto-container > h3 {
     font-size: 2.5rem;
     color: var(--dourado2);
     margin-bottom: 0.5rem;
 }
-main > #contacto-container > p {
+main > .contacto-container > p {
     font-weight: bold;
     font-size: 1.3rem;
     color: var(--branco);
 }
 
-main > #container-contactar {
+main > .container-contactar {
     background-color: var(--cinza-escuro);
     padding: 2rem 4rem;
     border-top-left-radius: 2rem;
@@ -299,28 +306,28 @@ main > #container-contactar {
     gap: 2rem;
 }
 
-main > #container-contactar > #info-contactar {
+main > .container-contactar > #info-contactar {
     width: 30rem;
 }
 
-main > #container-contactar > #info-contactar > h4 {
+main > .container-contactar > #info-contactar > h4 {
     font-size: 1.6rem;
     color: var(--branco);
     margin-bottom: 0.5rem;
 }
 
-main > #container-contactar > #info-contactar > p {
+main > .container-contactar > #info-contactar > p {
     color: var(--branco);
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 1.7rem;
 }
 
-main > #container-contactar > #info-contactar > div > ul {
+main > .container-contactar > #info-contactar > div > ul {
     list-style: none;
 }
 
-main > #container-contactar > #info-contactar > div > ul > li {
+main > .container-contactar > #info-contactar > div > ul > li {
     background-color: #1e262b;
     margin-bottom: 0.5rem;
     padding: 1rem;
@@ -332,53 +339,53 @@ main > #container-contactar > #info-contactar > div > ul > li {
     gap: 0.6rem;
 }
 
-main > #container-contactar > #info-contactar > div > ul > li > div {
+main > .container-contactar > #info-contactar > div > ul > li > div {
     display: flex;
     gap: 0.1rem;
     flex-direction: column;
     color: var(--branco);
 }
 
-main > #container-contactar > #info-contactar > div > ul > li > div > .info {
+main > .container-contactar > #info-contactar > div > ul > li > div > .info {
     font-weight: bold;
 }
 
-main > #container-contactar > #info-contactar > div > ul > li > .fa-phone {
+main > .container-contactar > #info-contactar > div > ul > li > .fa-phone {
     color: var(--dourado2);
 }
 
-main > #container-contactar > #info-contactar > div > ul > li > .fa-location-dot {
+main > .container-contactar > #info-contactar > div > ul > li > .fa-location-dot {
     color: var(--dourado2);
 }
 
-main > #container-contactar > #info-contactar > div > ul > li > .fa-envelope {
+main > .container-contactar > #info-contactar > div > ul > li > .fa-envelope {
     color: var(--dourado2);
 }
 
-main > #container-contactar > #info-contactar > div > ul > li > .fa-whatsapp {
+main > .container-contactar > #info-contactar > div > ul > li > .fa-whatsapp {
     color: var(--dourado2);
     font-size: 1.1rem;
 }
 
-main > #container-contactar > #form-container {
+main > .container-contactar > #form-container {
     background-color: #1e262b;
     padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.432);
 }
 
-main > #container-contactar > #form-container > form > h4 {
+main > .container-contactar > #form-container > form > h4 {
     font-size: 1.6rem;
     color: var(--branco);
     margin-bottom: 0.6rem;
 }
 
-main > #container-contactar > #form-container > form #primeiro-campo {
+main > .container-contactar > #form-container > form #primeiro-campo {
     display: flex;
     gap: 2rem;
 }
 
-main > #container-contactar > #form-container > form #primeiro-campo > .primeira-linha {
+main > .container-contactar > #form-container > form #primeiro-campo > .primeira-linha {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
@@ -386,7 +393,7 @@ main > #container-contactar > #form-container > form #primeiro-campo > .primeira
     margin-bottom: 1rem;
 }
 
-main > #container-contactar > #form-container > form #primeiro-campo > .primeira-linha > input {
+main > .container-contactar > #form-container > form #primeiro-campo > .primeira-linha > input {
     width: 16rem;
     border: 0.1rem solid var(--dourado);
     height: 1.7rem;
@@ -399,7 +406,7 @@ main > #container-contactar > #form-container > form #primeiro-campo > .primeira
     color: var(--branco);
 }
 
-main > #container-contactar > #form-container > form #segunda-coluna {
+main > .container-contactar > #form-container > form #segunda-coluna {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
@@ -407,7 +414,7 @@ main > #container-contactar > #form-container > form #segunda-coluna {
     margin-bottom: 1rem;
 }
 
-main > #container-contactar > #form-container > form #segunda-coluna > input {
+main > .container-contactar > #form-container > form #segunda-coluna > input {
     border: 0.1rem solid var(--dourado);
     height: 1.7rem;
     border-radius: 0.3rem;
@@ -419,7 +426,7 @@ main > #container-contactar > #form-container > form #segunda-coluna > input {
     color: var(--branco);
 }
 
-main > #container-contactar > #form-container > form #terceira-coluna {
+main > .container-contactar > #form-container > form #terceira-coluna {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -427,7 +434,7 @@ main > #container-contactar > #form-container > form #terceira-coluna {
     margin-bottom: 1rem;
 }
 
-main > #container-contactar > #form-container > form #terceira-coluna > textarea {
+main > .container-contactar > #form-container > form #terceira-coluna > textarea {
     border: 0.1rem solid var(--dourado);
     height: 5rem;
     border-radius: 0.3rem;
@@ -438,7 +445,7 @@ main > #container-contactar > #form-container > form #terceira-coluna > textarea
     color: var(--branco);
 }
 
-main > #container-contactar > #form-container > form button {
+main > .container-contactar > #form-container > form button {
     padding: 0.4rem;
     width: 100%;
     border-radius: 0.3rem;
@@ -451,7 +458,7 @@ main > #container-contactar > #form-container > form button {
     transition: .3s;
 }
 
-main > #container-contactar > #form-container > form button:hover {
+main > .container-contactar > #form-container > form button:hover {
     background-color: var(--dourado);
 }
 
