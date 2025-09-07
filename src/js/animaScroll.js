@@ -1,7 +1,7 @@
 export function servico_scrool() {
     ScrollReveal().reveal('.servico-scroll', { 
         origin: "top",
-        duration: 1800,
+        duration: 1000,
         distance: "70%" 
     });
 
@@ -25,19 +25,19 @@ export function servico_scrool() {
 
     ScrollReveal().reveal('.scroll-localizacao', { 
         origin: "top",
-        duration: 1800,
+        duration: 800,
         distance: "100%" 
     });
 
     ScrollReveal().reveal('#form-container', { 
         origin: "right",
-        duration: 2000,
+        duration: 1000,
         distance: "50%" 
     });
 
     ScrollReveal().reveal('.swiper-slide', { 
         origin: "left",
-        duration: 4000,
+        duration: 1000,
         distance: "100%" 
     });
 }
