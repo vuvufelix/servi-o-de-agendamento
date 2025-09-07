@@ -1,0 +1,88 @@
+
+footer {
+    width: 100%;
+    background-color: #1e262b;
+    padding: 1.5rem;
+}
+
+footer > #contaudo-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+}
+
+footer > #contaudo-footer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer > #contaudo-footer > div > span {
+    color: #868383;
+}
+
+footer h5 {
+    color: #d3d0d0;
+    font-size: 1.3rem;
+}
+
+footer > #contaudo-footer > div > div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.3rem;
+}
+
+footer > #contaudo-footer > div > div > .whatsapp {
+    color: green;
+}
+
+footer > #contaudo-footer > div > div > .facebook {
+    color: blue;
+}
+
+footer > #contaudo-footer > div > div > .instagram {
+    color: orangered;
+}
+
+footer img {
+    width: 18rem;
+    height: 5rem;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+footer > hr {
+    margin: 0.8rem 0;
+}
+
+footer > #copy-right {
+    text-align: center;
+    color: #868383;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 700px) {
+
+    footer > #contaudo-footer {
+        padding: 0;
+    }
+
+    footer > #contaudo-footer > div > span {
+        font-size: 0.9rem;
+    }
+
+    footer h5 {
+        font-size: 1.2rem;
+    }
+
+    footer img {
+        width: 13rem;
+        height: 4rem;
+    }
+
+    footer > #copy-right {
+        font-size: 0.9rem;
+    }
+}

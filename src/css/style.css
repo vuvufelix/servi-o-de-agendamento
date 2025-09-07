@@ -23,62 +23,6 @@ body {
     position: relative;
 }
 
-#header-desktop {
-    padding: 0.8rem;
-    background-color: var(--azul-marinho);
-    box-shadow: 0.1rem 0.2rem 0.4rem rgba(0, 0, 0, 0.644);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-
-header > #header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-header > #header-container > a {
-    width: 4.5rem;
-    height: 4.5rem;
-    margin-left: 4rem;
-}
-
-header > #header-container > a > img {
-    width: 100%;
-}
-
-header > #header-container > nav {
-    margin-right: 5rem;
-}
-
-header > #header-container > nav > ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
-}
-
-header > #header-container > nav > ul > li > a {
-    text-decoration: none;
-    transition: .3s;
-    font-weight: bold;
-    color: var(--branco);
-}
-
-header > #header-container > nav > ul > li > a:hover {
-    color: var(--dourado);
-}
-
-.hide {
-    display: none;
-}
-
-header > #header-container > nav > ul > li > a.ativar {
-    color: var(--dourado);
-}
-
 .cor-branco {
     color:#fff;
 }
@@ -244,7 +188,6 @@ main > .servico-container > #servicos > ul > li {
     cursor: pointer;
     box-shadow: 1rem 0rem 13rem 12px rgba(0, 0, 0, 0.466);
 
-    background-color: rgb(129, 50, 160);
     background:linear-gradient(45deg, #370c68,#0c1a68);
     transition: .3s
 }
@@ -280,7 +223,7 @@ main > #container-observacao > p > strong {
     color: var(--dourado);
 }
 
-main > #imagem-slide {
+main > .imagem-slide {
     width: 90%; 
     padding: 4rem 0; 
     overflow-x: hidden;
@@ -288,14 +231,14 @@ main > #imagem-slide {
     box-shadow: inset 0 0.3rem 5rem 5px #000000b6;
 }
 
-main > #imagem-slide > h3 {
+main > .imagem-slide > h3 {
     text-align: center;
     font-size: 2rem;
     color: var(--dourado2);
     margin-bottom: 2rem;
 }
 
-main > #imagem-slide .swiper-slide {
+main > .imagem-slide .swiper-slide {
     width: 15rem; 
     height: 15rem; 
     background-position: center; 
@@ -303,7 +246,7 @@ main > #imagem-slide .swiper-slide {
     box-shadow: -2px 1rem 11rem 1rem #000000;
 }
 
-main > #imagem-slide .swiper-slide > img {
+main > .imagem-slide .swiper-slide > img {
     display: block; 
     width: 100%; 
     height: 100%;
@@ -500,68 +443,232 @@ main > .container-contactar > #form-container > form button:hover {
     background-color: var(--dourado);
 }
 
-footer {
-    width: 100%;
-    background-color: #1e262b;
-    padding: 1.5rem;
-}
+@media screen and (max-width: 700px) {
 
-footer > #contaudo-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 4rem;
-}
+    main > .img-fundo > #campo-titulo {
+        left: 0.5rem;
+    }
 
-footer > #contaudo-footer > div {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
+    main > .img-fundo > #campo-titulo > h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--dourado);
+        margin-bottom: 1.7rem;
+    }
+    
+    main > .img-fundo > #campo-titulo > p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: var(--dourado);
+        width: 100%;
+    }
 
-footer > #contaudo-footer > div > span {
-    color: #868383;
-}
+    main > .container-artigo {
+        flex-direction: column;
+        margin: 2.5rem auto 4rem auto;
+        width: 95%;
+    }
+    
+    main > .container-artigo > #artigo-campo {
+        width: 100%;
+        height: 20rem;
+        order: 2;
+    }
+    
+    main > .container-artigo > #artigo-campo > img {
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+    }
+    
+    main > .container-artigo > #artigo-conteudo {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    main > .container-artigo > #artigo-conteudo > h3 {
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    main > .container-artigo > #artigo-conteudo > article {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    main > .container-artigo > #artigo-conteudo > button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        width: 12rem;
+    }
 
-footer h5 {
-    color: #d3d0d0;
-    font-size: 1.3rem;
-}
+    main > .sobre-nos {
+        width: 95%;
+        padding: 0 1rem 0 1rem;
+        margin-bottom: 0 auto 2rem auto;
+    }
+    
+    main > .sobre-nos > h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.6rem;
+    }
+    
+    main > .sobre-nos > article > p {
+        font-size: 1rem;
+    }
 
-footer > #contaudo-footer > div > div {
-    display: flex;
-    gap: 1rem;
-    margin-top: 0.3rem;
-}
+    main > .servico-container {
+        width: 100%;
+        padding: 0.5rem;
+        justify-content: center;
+    }
+    
+    main > .servico-container > h3 {
+        font-size: 1.5rem;
+    }
+    
+    main > .servico-container > #servicos {
+        width: 90%;
+        padding: 1rem;
+    }
+    
+    main > .servico-container > #servicos > ul > li {
+        height: 14rem;
+        width: 100%;
+    }
+    
+    main > .servico-container > #servicos > ul > li > span {
+        font-size: 1rem;
+    }
+    
+    main > .servico-container > #servicos > ul > li > .icone-destaque > i {
+        font-size: 6rem;
+    }
 
-footer > #contaudo-footer > div > div > .whatsapp {
-    color: green;
-}
+    main > #container-observacao {
+        padding: 0.8rem;
+    }
+    
+    main > #container-observacao > p {
+        font-size: 1rem;
+    }
 
-footer > #contaudo-footer > div > div > .facebook {
-    color: blue;
-}
+    main > .imagem-slide {
+        width: 95%; 
+        padding: 2rem 0; 
+    }
+    
+    main > .imagem-slide > h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    main > .imagem-slide .swiper-slide {
+        width: 10rem; 
+        height: 10rem; 
+    }
 
-footer > #contaudo-footer > div > div > .instagram {
-    color: orangered;
-}
+    main > .contacto-container {
+        width: 95%;
+        padding: .5rem 2rem;
+    }
+    
+    main > .contacto-container > h3 {
+        font-size: 1.6rem;
+    }
 
-footer img {
-    width: 18rem;
-    height: 5rem;
-    object-fit: cover;
-    filter: grayscale(100%);
-}
+    main > .contacto-container > p {
+        font-size: 1rem;
+    }
 
-footer > hr {
-    margin: 0.8rem 0;
-}
+    main > .container-contactar {
+        padding: 2rem 2rem;
+    }
+    
+    main > .container-contactar > #info-contactar {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main > .container-contactar > #info-contactar > h4 {
+        font-size: 1.5rem;
+    }
+    
+    main > .container-contactar > #info-contactar > p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
 
-footer > #copy-right {
-    text-align: center;
-    color: #868383;
-    font-weight: bold;
-    font-size: 1.1rem;
+    main > .container-contactar > #info-contactar > div {
+        width:100%;
+    }
+    
+    main > .container-contactar > #info-contactar > div > ul {
+        list-style: none;
+    }
+    
+    main > .container-contactar > #info-contactar > div > ul > li > div > .info {
+        font-size: 0.9rem;
+    }
+
+    main > .container-contactar > #info-contactar > div > ul > li > div:nth-child(2) {
+        font-size: 0.8rem;
+    }
+    
+    main > .container-contactar > #form-container {
+        padding: 1.1rem;
+        width:100%;
+    }
+    
+    main > .container-contactar > #form-container > form > h4 {
+        font-size: 1.3rem;
+    }
+
+    main > .container-contactar > #form-container > form label {
+        font-size: 0.8rem;
+    }
+    
+    main > .container-contactar > #form-container > form #primeiro-campo {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    main > .container-contactar > #form-container > form #primeiro-campo > .primeira-linha > input {
+        width: 100%;
+        height: 1.4rem;
+        text-indent: 1.5px;
+        font-weight: 400;
+        outline: none;
+    }
+    
+    main > .container-contactar > #form-container > form #segunda-coluna {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        color: var(--branco);
+        margin-bottom: 1rem;
+    }
+    
+    main > .container-contactar > #form-container > form #segunda-coluna > input {
+        height: 1.4rem;
+        text-indent: 1.5px;
+        font-weight: 400;
+        outline: none;
+    }
+    
+    main > .container-contactar > #form-container > form #terceira-coluna {
+        gap: 0.3rem;
+    }
+    
+    main > .container-contactar > #form-container > form #terceira-coluna > textarea {
+        height: 4rem;
+        text-indent: 5px;
+        font-weight: 400;
+        outline: none;
+    }
+
 }
 
 #contactar-agora {

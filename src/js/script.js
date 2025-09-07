@@ -1,8 +1,5 @@
 import { servico_scrool } from "./animaScroll.js"
 
-const header_desktop = document.querySelector("#header-desktop")
-const header_modile = document.querySelector("#header-modile")
-
 // Mobile app
 const nav_mobile = document.querySelector(".nav-mobile")
 const menu_amburguer = document.querySelector("#menu-amburguer")
@@ -17,25 +14,11 @@ menu_amburguer.addEventListener("click", () => {
     console.log("funcionando")
 })
 
-function mudouTamanho() {
-
-    if(window.innerWidth >= 700) {
-        header_modile.classList.add("hide")
-        header_desktop.classList.remove("hide")
-    } else {
-        header_modile.classList.remove("hide")
-        header_desktop.classList.add("hide")
-    }
-}
-
 const sections = document.querySelectorAll("section")
 const nav_link = document.querySelectorAll(" ul li a")
 
 let link = [...nav_link]
 let section = [...sections]
-
-console.log(link)
-console.log(section)
 
 const observar = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -51,10 +34,6 @@ const observar = new IntersectionObserver((entries) => {
     })
 }, { threshold: 0.9 })
 
-//console.log(observar)
-
-
-mudouTamanho()
 servico_scrool()
 
 section.forEach(seccao => {

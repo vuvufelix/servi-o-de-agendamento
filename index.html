@@ -6,17 +6,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/header_media.css">
+    <link rel="stylesheet" href="src/css/footer_media.css">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Agendamentos</title>
 </head>
-<body onresize="mudouTamanho()">
+<body>
     <!--
         
-        
-        
-        
         <i class="fa-solid fa-user"></i>
-        
 
         <i class="fa-brands fa-apple"></i>
         <i class="fa-brands fa-google"></i>
@@ -29,23 +26,23 @@
                     <li><a href="#home" id="link-home">Home</a></li>
                     <li><a href="#sobre" id="link-sobre">Quem somos</a></li>
                     <li><a href="#servico" id="link-servico">Serviços</a></li>
+                    <li><a href="#galeria" id="link-galeria">Galeria</a></li>
                     <li><a href="#contato" id="link-contato">Contacto</a></li>
-                    <li><a href="#localizacao" id="link-localizacao">Localização</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <header id="header-modile">
+    <header id="header-mobile" id="hide">
         <div id="header-container-mobile">
             <a href=""><img src="src/img/imagem14.png" alt="logo do site"></a>
             <nav class="nav-mobile">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Quem somos</a></li>
-                    <li><a href="">Serviços</a></li>
-                    <li><a href="">Contacto</a></li>
-                    <li><a href="">Localização</a></li>
+                    <li><a href="#home" id="link-home">Home</a></li>
+                    <li><a href="#sobre" id="link-sobre">Quem somos</a></li>
+                    <li><a href="#servico" id="link-servico">Serviços</a></li>
+                    <li><a href="#galeria" id="link-galeria">Galeria</a></li>
+                    <li><a href="#contato" id="link-contato">Contacto</a></li>
                 </ul>
             </nav>
             <div id="menu-amburguer"><i class="fa-solid fa-bars"></i></div>
@@ -149,7 +146,7 @@
             </p>
         </div>
 
-        <section id="imagem-slide">
+        <section id="galeria" class="imagem-slide">
             <h3>Nossa Galeria</h3>
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="src/img/imagem4.jpg"></div>
