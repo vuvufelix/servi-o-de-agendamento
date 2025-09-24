@@ -449,6 +449,10 @@ main > .container-contactar > #form-container > form button:hover {
 
 @media screen and (max-width: 700px) {
 
+    main {
+        overflow: hidden;
+    }
+
     main > .img-fundo > #campo-titulo {
         left: 0.5rem;
     }
