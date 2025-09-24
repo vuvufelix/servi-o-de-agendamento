@@ -21,6 +21,9 @@
 body {
     background-color: var(--azul-marinho);
     position: relative;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .cor-branco {
@@ -29,6 +32,7 @@ body {
 
 main {
     width: 100%;
+    flex: 1;
 }
 
 main > .img-fundo {
@@ -283,7 +287,7 @@ main > .container-contactar {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    flex-wrap: wrap;
+    
     gap: 2rem;
 }
 
@@ -583,6 +587,7 @@ main > .container-contactar > #form-container > form button:hover {
 
     main > .container-contactar {
         padding: 2rem 2rem;
+        flex-wrap: wrap;
     }
     
     main > .container-contactar > #info-contactar {
@@ -669,6 +674,158 @@ main > .container-contactar > #form-container > form button:hover {
         outline: none;
     }
 
+}
+
+@media screen and (max-width: 888px) {
+    main > .container-contactar {
+        padding: 2rem 2rem;
+        flex-wrap: wrap;
+    }
+    
+    main > .container-contactar > #info-contactar {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main > .container-contactar > #info-contactar > h4 {
+        font-size: 1.5rem;
+    }
+    
+    main > .container-contactar > #info-contactar > p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    main > .container-contactar > #info-contactar > div {
+        width:100%;
+    }
+    
+    main > .container-contactar > #info-contactar > div > ul {
+        list-style: none;
+    }
+    
+    main > .container-contactar > #info-contactar > div > ul > li > div > .info {
+        font-size: 0.9rem;
+    }
+
+    main > .container-contactar > #info-contactar > div > ul > li > div:nth-child(2) {
+        font-size: 0.8rem;
+    }
+    
+    main > .container-contactar > #form-container {
+        padding: 1.1rem;
+        width:100%;
+    }
+    
+    main > .container-contactar > #form-container > form > h4 {
+        font-size: 1.3rem;
+    }
+
+    main > .container-contactar > #form-container > form label {
+        font-size: 0.8rem;
+    }
+    
+    main > .container-contactar > #form-container > form #primeiro-campo {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    main > .container-contactar > #form-container > form #primeiro-campo > .primeira-linha > input {
+        width: 100%;
+        height: 1.4rem;
+        text-indent: 1.5px;
+        font-weight: 400;
+        outline: none;
+    }
+    
+    main > .container-contactar > #form-container > form #segunda-coluna {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        color: var(--branco);
+        margin-bottom: 1rem;
+    }
+    
+    main > .container-contactar > #form-container > form #segunda-coluna > input {
+        height: 1.4rem;
+        text-indent: 1.5px;
+        font-weight: 400;
+        outline: none;
+    }
+    
+    main > .container-contactar > #form-container > form #terceira-coluna {
+        gap: 0.3rem;
+    }
+    
+    main > .container-contactar > #form-container > form #terceira-coluna > textarea {
+        height: 4rem;
+        text-indent: 5px;
+        font-weight: 400;
+        outline: none;
+    }
+}
+
+@media screen and (max-width: 984px) {
+
+    main > .container-contactar {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1131px) {
+
+    main > .img-fundo > #campo-titulo {
+        position: absolute;
+        left: 1rem;
+    }
+
+    main > .container-artigo {
+        flex-direction: column;
+        margin: 2.5rem auto 4rem auto;
+        width: 95%;
+    }
+    
+    main > .container-artigo > #artigo-campo {
+        width: 100%;
+        height: 20rem;
+        order: 2;
+    }
+    
+    main > .container-artigo > #artigo-campo > img {
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+    }
+    
+    main > .container-artigo > #artigo-conteudo {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    main > .container-artigo > #artigo-conteudo > h3 {
+        font-size: 1.7rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    main > .container-artigo > #artigo-conteudo > article {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    main > .container-artigo > #artigo-conteudo > button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        width: 12rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+        width: 99rem;
+        margin: auto;
+    }
 }
 
 #contactar-agora {

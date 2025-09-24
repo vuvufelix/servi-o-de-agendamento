@@ -86,3 +86,10 @@ footer > #copy-right {
         font-size: 0.9rem;
     }
 }
+
+@media screen and (min-width: 1400px) {
+    footer {
+        width: 99rem;
+        margin: auto;
+    }
+}
