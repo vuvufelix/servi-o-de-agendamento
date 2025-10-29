@@ -4,7 +4,7 @@ This is an application, specifically a modern and responsive fictional landing p
 
 ![imagem da aplicação](./src/img/screencapture-127-0-0-1-5500-index-html-2025-09-24-18_16_03.png)
 
-# Bibiotecas 
+# Livrary 
 
 - Scroll Reveal: for animations of elements
 - Swipper: scroll on cards image
